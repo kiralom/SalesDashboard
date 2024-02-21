@@ -12,7 +12,7 @@ Directions
 
 ~~3. Install all necessary dependencies for your dashboard, including MUI and any other required packages such as @mui/material, @emotion/react, @emotion/styled, @mui/x-data-grid, @mui/icons-material, and react-router-dom with -g command to install it globally.~~
 
-4. Set your data source by importing the provided JSON file hereLinks to an external site..
+~~4. Set your data source by importing the provided JSON file hereLinks to an external site..~~
 
 5. Develop components for your dashboard. You might include things like a primary dashboard, heading, sidebar, revenue section and list of transactions.
 
