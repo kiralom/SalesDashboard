@@ -8,8 +8,11 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import MoveToInboxIcon from "@mui/icons-material/MoveToInbox";
+import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import MailIcon from "@mui/icons-material/Mail";
+import SettingsIcon from "@mui/icons-material/Settings";
+import ReportIcon from "@mui/icons-material/Report";
+import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 
 export default function Sidebar() {
   const [state, setState] = React.useState({
@@ -38,11 +41,11 @@ export default function Sidebar() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
+        {["Profile", "Settings"].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                {index % 2 === 0 ? <MoveToInboxIcon /> : <MailIcon />}
+                {index % 2 === 0 ? <AccountBoxIcon /> : <SettingsIcon />}
               </ListItemIcon>
               <ListItemText primary={text} />
             </ListItemButton>
@@ -51,11 +54,11 @@ export default function Sidebar() {
       </List>
       <Divider />
       <List>
-        {["All mail", "Trash", "Spam"].map((text, index) => (
+        {["Report Issue", "Delete"].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                {index % 2 === 0 ? <MoveToInboxIcon /> : <MailIcon />}
+                {index % 2 === 0 ? <ReportIcon /> : <DeleteForeverIcon />}
               </ListItemIcon>
               <ListItemText primary={text} />
             </ListItemButton>
@@ -66,15 +69,18 @@ export default function Sidebar() {
   );
 
   return (
-    <div className="sidebar">
+    <div>
       {["left"].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}>Show Sidebar</Button>
+          <Button id="sidebarButton" onClick={toggleDrawer(anchor, true)}>
+            Show Sidebar
+          </Button>
           <Drawer
             anchor={anchor}
             open={state[anchor]}
             onClose={toggleDrawer(anchor, false)}
           >
+            <h3>| The Company Sales Dashboard |</h3>
             {list(anchor)}
           </Drawer>
         </React.Fragment>

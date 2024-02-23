@@ -14,9 +14,9 @@ Directions
 
 ~~4. Set your data source by importing the provided JSON file hereLinks to an external site..~~
 
-5. Develop components for your dashboard. You might include things like a primary dashboard, heading, sidebar, revenue section and list of transactions.
+~~5. Develop components for your dashboard. You might include things like a primary dashboard, heading, sidebar, revenue section and list of transactions.~~
 
-6. Utilize MUI to create a responsive layout for your dashboard and style your components as needed.
+~~6. Utilize MUI to create a responsive layout for your dashboard and style your components as needed.~~
 
 7. Implement interactive features, such as click events using React hooks or other libraries.
 

@@ -12,15 +12,15 @@ export default function ExpensesCard() {
         <CardMedia
           component="img"
           height="240"
-          image="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Sony_Mobile_sales_graph.svg/640px-Sony_Mobile_sales_graph.svg.png"
-          alt="green iguana"
+          image="https://spreadsheetpage.com/wp-content/uploads/2017/06/Sales-Chart-One-Target-Bar-1024x526.jpg"
+          alt="Annual Expenses"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             Annual Expenses Data
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Overall sales from 2004 to 2017
+            Expenses from Jan - Dec FY
           </Typography>
         </CardContent>
       </CardActionArea>
